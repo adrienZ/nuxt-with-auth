@@ -3,7 +3,7 @@ import path from "node:path";
 
 export default defineConfig({
   dialect: "postgresql",
-  schema: path.resolve(__dirname, "./server/database/schemas/auth-schemas.ts"),
+  schema: path.resolve(__dirname, "./server/database/schemas"),
   out: "./server/database/migrations",
   verbose: true,
   driver: "pglite",
